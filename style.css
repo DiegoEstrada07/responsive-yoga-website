@@ -14,19 +14,144 @@ header{
 /*home*/
 
 .home{
+    display: block;
+    align-items: center;
+    width: 376px;
+    height: 1021px;
+}
 
+#title-home{
+    width: 284px;
+    height: 177px;
+    margin-left: 40px;
+    margin-top: 36px;
+}
+
+#text-home{
+    text-align: center;
+    width: 328px;
+    height: 69px;
+    margin-top: 19px;
+    margin-left: 24px;
+}
+
+#home-decoration{
+    height: 16px;
+    width: 16px;
+    margin-left: 263px;
+}
+
+#started-home{
+    width: 206px;
+    height: 56px;
+    margin-left: 1px;
+}
+
+#a-home{
+    display: inline-flex;
+    width: 206px;
+    height: 56px;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #ff4f9a, #7a5cff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+    margin-left: 85px;
+    margin-top: 2px;
+}
+
+#yoga-text{
+    display: flex;
+    width: 199px;
+    height: 56px;
+    margin-top: 10px;
+    margin-left: 89px;
+    flex-direction: row;
+}
+
+.yoga-numbers{
+    width: 66px;
+    height: 36px;
+    font-size: 28px;
+}
+
+.yoga-numbers2{
+    font-size: 13px;
+}
+
+#yoga-class{
+    text-align: center;
+    display: block;
+    width: 73px;
+    height: 56px;
+}
+
+#participants{
+    text-align: center;
+    float: right;
+    width: 78px;
+    height: 56px;
+    margin-left: 60px;
+}
+
+#home-yoga{
+    width: 320px;
+    height: 427.84px;
+    margin-left: 28px;
+    margin-top: 50px;
 }
 
 /*list*/
 
 .list{
+    display: block;
+    align-items: center;
+    width: 376px;
+    height: 479px;
+}
 
+#yoga-list{
+    margin-left: 34px;
+    margin-top: 34px;
+    height: 125px;
+    width: 307px;
+}
+
+#sparks-list{
+    height: 56.92px;
+    width: 50px;
+    margin-top: 7px;
+    margin-left: 24px;
+}
+
+#list-text{
+    font-size: 16px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 24px;
+    width: 328px;
+    height: 69px;
+}
+
+#next-button{
+    width: 150px;
+    height: 143px;
+    margin-left: 113px;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 /*Helth*/
 
 .helth{
-
+    display: block;
+    align-items: center;
+    width: 376px;
+    height: 730px;
 }
 
 /*Routine*/
