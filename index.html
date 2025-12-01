@@ -3,74 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Yoga Website</title>
 </head>
+
 <body>
+    <input type="checkbox" id="darkmode-toggle">
     <header>
-        <img class="logo" src="images/header/Yoga.png" alt="Yoga">
-        <div class="icon">
-            <a href="#"><img src="images/header/moon-nav.png" alt="moon"></a>
-            <a href="#"><img src="images/header/points-nav.png" alt="points"></a>
-        </div>
-        <div id="hiden-menu">
-            <label for="hiden-menu"><img src="images/header/x.png" alt=""></label>
-            <ul>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/header/Yoga.png" alt="Fitness Logo">
+            </div>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Health</a></li>
-                <a href="#">Place</a></li>
-                <a href="#">Follow</a></li>
+                <li><a href="#">Services 1</a></li>
+                <li><a href="#">Services 2</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+            <div class="nav-icons">
+                <label for="darkmode-toggle" class="dark-mode-label">
+                    <img src="images/header/moon.png" alt="Dark Mode">
+                    <img id="sun-icon" src="images/header/sun.png" alt="Sun icon" style="display: none;">
+                </label>
+                <label for="menu-checkbox" class="menu-checkbox-container">
+                    <input type="checkbox" id="menu-checkbox">
+                    <img id="menu-icon" src="images/header/points-nav.png" alt="Menu Icon">
+                    <img id="menu-icon-dark" src="images/header/settings-dark.png" alt="Menu Icon Dark">
+                    <div class="menu-dropdown">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Health</a></li>
+                            <li><a href="#">Routine</a></li>
+                            <li><a href="#">Follow</a></li>
+                        </ul>
+                        <img src="images/header/x.png" alt="Close Icon" class="close-icon">
+                    </div>
+                </label>
+            </div>
         </div>
     </header>
-    
+
     <main>
-        <section class="home">
-            <div>
-                <img id="title-home" src="images/home/title-home.png" alt="title home">
-            </div>
-            <div id="text-home">
-                <p>Calm your mind and body with the best<br>yoga teachers available, relax your day<br>and stay positive.</p>
-            </div>
-            <img id="home-decoration" src="images/home/home-circle.png" alt="">
-            <div id="started-home">
-                <a id="a-home" href="#">Get Started Free <img src="images/home/right-arrow.png" alt=""></a>
-            </div>
-            <div id="yoga-text">
-                <div id="yoga-class">
-                    <p class="yoga-numbers">300+</p>
-                    <p class="yoga-numbers2">Yoga Class</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    Choose Your <br>
+                     Best
+                    <div class="yoga-highlight-wrapper"> <span class="highlight">Yoga</span>
+                        <img src="images/home/home-star.png" alt="Sparkle Icon" class="yoga-sparkle-icon">
+                    </div>
+                    <br> Teacher
+                </h1>
+                <p>Calm your mind and body with the best yoga teachers available. Start your day and stay positive.</p>
+                <a href="#" class="btn">Get Started Free <span class="arrow">→</span></a>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">Yoga Class</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Participants</span>
+                    </div>
                 </div>
-                <div id="participants">
-                    <p class="yoga-numbers">40+</p>
-                    <p class="yoga-numbers2">Participants</p>
-                </div>
             </div>
-            <div id="home-yoga">
-                <img src="images/home/home-yoga.png" alt="home yoga">
-            </div>
-        </section>
-        
-        <section class="list">
-            <img id="yoga-list" src="images/list/box-list.png" alt="yoman doing yoga">
-            <img id="sparks-list" src="images/list/stars-list.png" alt="">
-            <p id="list-text">Get a list of specific influencers in your<br>niche at your fingertips so you can focus on<br>managing your status.</p>
-            <div id="next-button">
-                <a href="#"><img src="images/list/Button-link-list.png" alt="Next button"></a>
+            <div class="hero-image">
+                <img src="images/home/home-yoga.png" alt="Yoga Pose">
             </div>
         </section>
 
-        <section class="health">
-            <div id="health-title">
-                <h2 id="h2-health">Bring Happiness To <br>Good Health!</h2>
-                <p id="p-health">If you take care of your good health, take<br>care of your mentality and lead a healthy<br>life with positive thoughts every day.</p>
-                <a id="start-health" href="#"><img src="images/helth/button-helth.png" alt=""></a>
+        <section class="info-section">
+            <div class="info-container">
+                <div class="info-card left-card">
+                    <div class="card-content-wrapper">
+                        <div class="info-image-container">
+                            <span class="number">#01</span>
+                            <img id="yoga-woman" src="images/list/List-box.png" alt="Yoga Pose 1">
+                        </div>
+                        <div class="info-text">
+                            
+                            <div class="text-content">
+                                <img id="stars-list" src="images/list/stars-list.png" alt="stars-list">
+                                <p>Get a list of specific influencers
+                                    Get a list of specific influencers in your niche and find people who you can focus on
+                                    managing your status.</p>
+                            </div>
+                            <a href="#" class="next-btn-gradient">Next <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="health-image">
-                <img src="images/helth/helth-image-group.png" alt="men doing exercise">
+
+            <div class="info-card right-card">
+                <div class="card-content-wrapper">
+                    <div class="info-image">
+                        <img src="images/health/health-image-light.png" alt="Yoga Pose 2">
+                        <span class="heart-rate"></span>
+                    </div>
+                    <div class="info-content-right">
+                        <div class="text-group">
+                            <h3>Bring Happiness To Good Health!</h3>
+                            <p>If you take care of your good health, take care of your mentality and lead a healthy life
+                                with positive thoughts every day.</p>
+                            <a href="#" class="start-btn-gradient">Let's Start <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
-
         <!-- end of sections by Diego -->
         <!-- starto of sections by Vojta -->
         
