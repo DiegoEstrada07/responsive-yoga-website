@@ -27,9 +27,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: #fff;
+    line-height: 1.6;;
+    background: #F5F0FF;
 }
 
 h1,
@@ -151,6 +150,8 @@ p {
     background: linear-gradient(90deg, #ff4f9a, #7a5cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 #menu-checkbox {
@@ -695,7 +696,7 @@ p {
     }
 
     .hero-content .highlight {
-        background: linear-gradient(90deg, #a766c1, #c58ad0);
+        background:linear-gradient(90deg, #ff4f9a, #7a5cff);
         color: #fff;
         padding: 5px 15px;
         border-radius: 10px;
@@ -704,6 +705,8 @@ p {
         line-height: 1;
         white-space: nowrap;
     }
+
+    
 
     .hero-content .yoga-sparkle-icon {
         width: 60px;
